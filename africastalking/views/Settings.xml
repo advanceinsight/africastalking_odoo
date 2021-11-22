@@ -1,0 +1,71 @@
+<odoo>
+  <data>
+
+  <record id="res_config_settings_view_form" model="ir.ui.view">
+     <field name="name">res.config.settings.view.form.inherit.africastalking</field>
+     <field name="model">res.config.settings</field>
+     <field name="priority" eval="15"/>
+     <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+     <field name="arch" type="xml">
+
+         <xpath expr="//div[hasclass('settings')]" position="inside">
+             <div class="app_settings_block" data-string="Africa Talking" string="Africa Talking" data-key="africastalking_settings">
+
+                 <h2>Africa's Talking</h2>
+                 <div class="row mt16 o_settings_container" name="sokofreshml_setting_container">
+
+                    <div class="col-12 col-lg-6" style="padding-left: 0; padding-right: 0;">
+                       <div class="col-12 col-lg-12 o_setting_box">
+                           <div class="o_setting_left_pane"/>
+                           <div class="o_setting_right_pane">
+                               <label for="username"/>
+                               <div class="text-muted">
+                                   This account will be used when creating Harvester Bills on a Trade
+                               </div>
+                               <field name="username" string="Harvest Expense Account"/>
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-12 o_setting_box">
+                          <div class="o_setting_left_pane"/>
+                          <div class="o_setting_right_pane">
+                              <label for="api_key"/>
+                              <div class="text-muted">
+                                  This account will be used when creating Harvester Bills on a Trade
+                              </div>
+                              <field name="api_key" string="Harvest Payable Account"/>
+                          </div>
+                      </div>
+
+                    </div>
+
+<!--                     <div class="col-12 col-lg-6" style="padding-left: 0; padding-right: 0;">
+                       <div class="col-12 col-lg-12 o_setting_box">
+                           <div class="o_setting_left_pane"/>
+                           <div class="o_setting_right_pane">
+                               <label for="agent_account"/>
+                               <div class="text-muted">
+                                   This account will be used when creating Agent Bills on a Trade
+                               </div>
+                               <field name="agent_account" string="Agent Expense Account"/>
+                           </div>
+                       </div>
+                       <div class="col-12 col-lg-12 o_setting_box">
+                          <div class="o_setting_left_pane"/>
+                          <div class="o_setting_right_pane">
+                              <label for="agent_payable"/>
+                              <div class="text-muted">
+                                  This account will be used when creating Agent Bills on a Trade
+                              </div>
+                              <field name="agent_payable" string="Agent Payable Account"/>
+                          </div>
+                      </div>
+                    </div> -->
+
+                 </div>
+             </div>
+         </xpath>
+     </field>
+ </record>
+
+  </data>
+</odoo>

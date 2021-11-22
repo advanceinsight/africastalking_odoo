@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+
+    <!-- Create a settings menu for the Africa's Talking module -->
+      <record id="action_africastalking_general_config" model="ir.actions.act_window">
+        <field name="name">Africa's Talking Config</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'africastalking_settings'}</field>
+    </record>
+
+  </data>
+</odoo>
